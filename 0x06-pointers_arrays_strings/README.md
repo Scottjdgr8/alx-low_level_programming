@@ -1,1 +1,1 @@
-description of all project on 0x06
+0x06 alx pointers and arrays
