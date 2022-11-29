@@ -1,22 +1,16 @@
 #include "main.h"
-
 /**
- *  * print_alphabet_x10 - func
- *  *
- *  * Return - 0
+ * print_alphabet_x10-program entry point
  */
 void print_alphabet_x10(void)
 {
-	int b = 0;
-		while (b < 10)
+	int count = 0;
+	char letter;
+
+	while (count++ <= 9)
 	{
-		char a = 'a';
-		while (a <= 'z')
-		{
-			_putchar(a);
-			a++;
-		}
+		for (letter = 'a'; letter <= 'z'; letter++)
+			_putchar(letter);
 		_putchar('\n');
-		b++;
 	}
 }
