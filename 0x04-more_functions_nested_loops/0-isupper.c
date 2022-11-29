@@ -1,21 +1,17 @@
 #include "main.h"
 
 /**
- * * _putchar - writes the character c to stdout
+ * _isupper - uppercase letters
+ * @c: character to check
  *
- * * @c: The character to print
- *
- * *
- *
- * * Return: On success 1.
- *
- * * On error, -1 is returned, and errno is set appropriately.
- *
+ * Return: 0 or 1
  */
-
-int _putchar(char c)
+int _isupper(int c)
 
 {
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 
-	return (write(1, &c, 1));
 }
