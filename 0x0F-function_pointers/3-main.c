@@ -3,11 +3,13 @@
 #include <stdlib.h>
 #include "3-calc.h"
 /**
- * * main - main
- * * @argc: arg count
- * * @argv: arg array
- * * Return: int
- ***/
+ * main - main
+ * @argc: arg count
+ * @argv: arg array
+ *
+ * Return: int
+ *
+ **/
 int main(int argc, char **argv)
 {
 	int inta, intb;
@@ -28,17 +30,17 @@ int main(int argc, char **argv)
 	}
 
 	if ((argv[2][0] != '+' && argv[2][0] != '-' && argv[2][0] != '/' &&
-				argv[2][0] != '*' && argv[2][0] != '%') || strlen(argv[2]) != 1)
+	      argv[2][0] != '*' && argv[2][0] != '%') || strlen(argv[2]) != 1)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	inta = atoi(argv[1]);
-	intb = atoi(argv[3]);
+		inta = atoi(argv[1]);
+		intb = atoi(argv[3]);
 
-	printf("%d\n", f(inta, intb));
+		printf("%d\n", f(inta, intb));
 
-	return (0);
+		return (0);
 
 }
