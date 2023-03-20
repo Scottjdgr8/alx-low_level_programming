@@ -1,1 +1,1 @@
-0x07 alx low level program
+0x07-pointers_arrays_strings
