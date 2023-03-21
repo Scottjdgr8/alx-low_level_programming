@@ -1,38 +1,41 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 
 /**
- ** str_concat - function that concatenates two strings
- ** @q1: string of chars
- ** @q2: string of chars
- ** Return: address of the newly allocated memory
- **/
+ * str_concat - function that concatenates two strings
+ *
+ * @s1: string of chars
+ * @s2: string of chars
+ *
+ * Return: address of the newly allocated memory
+ */
 
-char *str_concat(char *q1, char *q2)
+char *str_concat(char *s1, char *s2)
 {
 	unsigned int len1, len2;
 	unsigned int i, j;
 	char *str_copy;
-	char *tmp1 = q1;
-	char *tmp2 = q2;
+	char *tmp1 = s1;
+	char *tmp2 = s2;
 
-	if (q1 == NULL)
-		q1 = "";
-	if (q2 == NULL)
-		q2 = "";
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
 	i = 0;
-	while (*q1++)
+	while (*s1++)
 		i++;
 	len1 = i;
-	q1 = tmp1;
+	s1 = tmp1;
 
 	i = 0;
-	while (*q2++)
+	while (*s2++)
 		i++;
 	len2 = i;
-	q2 = tmp2;
+	s2 = tmp2;
 
 	str_copy = malloc((len1 + len2) * sizeof(char) + 1);
 	if (str_copy == NULL)
@@ -41,12 +44,12 @@ char *str_concat(char *q1, char *q2)
 	j = 0;
 	while (j < len1)
 	{
-		str_copy[j] = q1[j];
+		str_copy[j] = s1[j];
 		j++;
 	}
 	while (j < len1 + len2)
 	{
-		str_copy[j] = q2[j - len1];
+		str_copy[j] = s2[j - len1];
 		j++;
 	}
 	str_copy[j] = '\0';

@@ -1,13 +1,16 @@
+
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * * argstostr - function that concatenates all the arguments of your program
- * * @ac: argument count
- * * @av: pointer to a string of pointers to strings
- * * Return: address of the newly allocated memory
- **/
+ * argstostr - function that concatenates all the arguments of your program
+ *
+ * @ac: argument count
+ * @av: pointer to a string of pointers to strings
+ *
+ * Return: address of the newly allocated memory
+ */
 
 char *argstostr(int ac, char **av)
 {

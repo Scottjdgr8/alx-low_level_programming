@@ -1,12 +1,13 @@
+
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 
 /**
- ** strtow - splits a string into words.
- ** @str: string to be splitted
- ** Return: pointer to an array of strings (words) or null
- **/
+* strtow - splits a string into words.
+* @str: string to be splitted
+* Return: pointer to an array of strings (words) or null
+**/
 
 char **strtow(char *str)
 {

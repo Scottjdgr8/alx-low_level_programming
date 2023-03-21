@@ -1,3 +1,4 @@
+
 #include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -9,6 +10,7 @@
  * @owner: owner's dog
  * Return: newdog
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 
@@ -16,9 +18,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *doge;
 
 	while (name[i] != '\0')
-	i++;
+		i++;
 	while (owner[j] != '\0')
-	j++;
+		j++;
 	doge = malloc(sizeof(dog_t));
 	if (doge == NULL)
 	{
@@ -46,5 +48,4 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (k = 0; k <= j; k++)
 		doge->owner[k] = owner[k];
 	return (doge);
-
 }

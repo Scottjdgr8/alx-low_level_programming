@@ -1,1 +1,1 @@
-0x10. C by JAYEOLA ABIODUN S. LAGOS NIGERIA
+variac functions

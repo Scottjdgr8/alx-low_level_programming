@@ -1,1 +1,1 @@
-0x06 alx pointers and arrays
+pointers_arrays_strings
